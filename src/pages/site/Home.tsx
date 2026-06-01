@@ -15,7 +15,7 @@ import { HeatMeter } from '@/components/brand/HeatMeter'
 import { Marquee } from '@/components/ui/Marquee'
 import { Reveal } from '@/components/ui/Reveal'
 import { MenuItemCard } from '@/components/site/MenuItemCard'
-import { LemonadeShowcase } from '@/components/site/LemonadeShowcase'
+import { ExtrasShowcase } from '@/components/site/ExtrasShowcase'
 import { ExperienceSection } from '@/components/site/ExperienceSection'
 import { SnackAttack } from '@/components/site/SnackAttack'
 import { buttonStyles } from '@/components/ui/Button'
@@ -314,7 +314,7 @@ function HeatLadder() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mx-auto mt-12 grid max-w-5xl grid-cols-2 gap-4 lg:grid-cols-4">
           {HEAT_LEVELS.map((heat, i) => (
             <Reveal key={heat.key} delay={i * 0.07}>
               <div
@@ -566,7 +566,7 @@ export function Home() {
       <Hero />
       <HeatBand />
       <Featured />
-      <LemonadeShowcase />
+      <ExtrasShowcase />
       <HeatLadder />
       <ExperienceSection />
       <StoryStrip />
