@@ -27,7 +27,7 @@ export function SnackAttack() {
           </h2>
           <p className="mt-4 max-w-md font-sans leading-relaxed text-smoke">
             Mac n&apos; cheese or fries, loaded with two jumbo tenders, Champs
-            sauce and dill chips — piled into one ridiculous bowl. Be sure to
+            sauce and pickles — piled into one ridiculous bowl. Be sure to
             ask about it.
           </p>
           <div className="mt-5 flex flex-wrap gap-2">

@@ -71,7 +71,7 @@ export const MENU: MenuItem[] = [
     id: 'e-sandwich',
     name: 'Champs Chicken Sandwich',
     description:
-      'Hand-breaded chicken breast on a toasted potato bun with coleslaw, dill chips and Champs sauce. The one that started it all.',
+      'Hand-breaded chicken breast on a toasted potato bun with coleslaw, pickles and Champs sauce. The one that started it all.',
     price: 8.99,
     category: 'entrees',
     heatable: true,
@@ -84,7 +84,7 @@ export const MENU: MenuItem[] = [
     id: 'e-tenderloin',
     name: 'Champs Tenderloin Sandwich',
     description:
-      'A whole crispy tenderloin on a toasted brioche bun with coleslaw, dill chips and Champs sauce.',
+      'A whole crispy tenderloin on a toasted brioche bun with coleslaw, pickles and Champs sauce.',
     price: 9.99,
     category: 'entrees',
     heatable: true,
@@ -95,7 +95,7 @@ export const MENU: MenuItem[] = [
     id: 'e-tenders',
     name: 'Champs Chicken Tenders',
     description:
-      'Three jumbo hand-breaded tenders served with dill chips and your choice of dipping sauce.',
+      'Three jumbo hand-breaded tenders served with pickles and your choice of dipping sauce.',
     price: 8.99,
     category: 'entrees',
     heatable: true,
@@ -108,7 +108,7 @@ export const MENU: MenuItem[] = [
     id: 'e-snack-attack',
     name: 'Champs Snack Attack',
     description:
-      'Mac n’ cheese or fries loaded with two jumbo tenders, Champs sauce and dill chips. Creamy. Crispy. Loaded. Addictive.',
+      'Mac n’ cheese or fries loaded with two jumbo tenders, Champs sauce and pickles. Creamy. Crispy. Loaded. Addictive.',
     price: 9.99,
     category: 'entrees',
     heatable: true,
@@ -132,7 +132,7 @@ export const MENU: MenuItem[] = [
     id: 'e-sliders',
     name: 'Champs Chicken Sliders',
     description:
-      'Two sliders on toasted brioche buns with coleslaw, dill chips and Champs sauce.',
+      'Two sliders on toasted brioche buns with coleslaw, pickles and Champs sauce.',
     price: 7.99,
     category: 'entrees',
     heatable: true,
@@ -266,25 +266,6 @@ export const MENU: MenuItem[] = [
       },
     ],
   },
-  {
-    id: 's-cheese-sauce',
-    name: 'Cheese Sauce',
-    description: 'A warm cup of liquid gold for dunking.',
-    price: 0.99,
-    category: 'sides',
-    heatable: false,
-    image: 'cheese-sauce.jpg',
-  },
-  {
-    id: 's-champs-sauce',
-    name: 'Extra Champs Sauce',
-    description: 'The house sauce, on the side, by the cup.',
-    price: 0.75,
-    category: 'sides',
-    heatable: false,
-    image: 'hot-sauce.jpg',
-  },
-
   // ---- DRINKS ---------------------------------------------------------
   {
     id: 'd-lemonade',

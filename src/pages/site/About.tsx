@@ -50,7 +50,7 @@ export function About() {
           </>
         }
         intro="A Fort Wayne spot with a simple mission — serve high-quality Nashville hot chicken that brings people together and leaves a lasting impression."
-        image={asset('assets/photos/header-basket.jpg')}
+        image={asset('assets/menu/loaded-platter.jpg')}
       />
 
       {/* origin */}

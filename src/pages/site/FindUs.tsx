@@ -33,7 +33,7 @@ export function FindUs() {
           </>
         }
         intro="One location, all the heat. Order ahead and we'll have it boxed and ready."
-        image={asset('assets/photos/exterior-wide.jpg')}
+        image={asset('assets/photos/dunk-hero.jpg')}
       />
 
       {/* map + contact */}

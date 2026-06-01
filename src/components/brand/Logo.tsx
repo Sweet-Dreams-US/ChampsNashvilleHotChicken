@@ -1,5 +1,5 @@
+import { asset } from '@/lib/asset'
 import { cn } from '@/lib/cn'
-import { Flame } from '@/components/brand/Flame'
 
 interface LogoProps {
   size?: number
@@ -9,19 +9,24 @@ interface LogoProps {
 }
 
 /**
- * The Champs Chicken logo lockup: a flame-lit ember badge beside the
- * "CHAMPS / CHICKEN" wordmark (CHAMPS in brand red, CHICKEN in cream), with a
- * small "Nashville Hot" line. Pure CSS/SVG — crisp at any size, no image
- * dependency, so swapping in the client's exact logo art later is trivial.
+ * The Champs Chicken logo lockup: the flaming-rooster emblem in an ember-ringed
+ * badge beside the "CHAMPS / CHICKEN" wordmark (CHAMPS in brand red, CHICKEN in
+ * cream), with a small "Nashville Hot" line. The emblem art is clipped to the
+ * disc (scaled to crop its square margin), so the client's final logo file can
+ * be dropped in at public/assets/champs-emblem.png with no code change.
  */
 export function Logo({ size = 46, showWordmark = true, compact = false, className }: LogoProps) {
   return (
     <span className={cn('inline-flex items-center gap-2.5', className)}>
       <span
-        className="relative grid shrink-0 place-items-center rounded-full bg-char shadow-glow-ember ring-2 ring-ember"
+        className="relative grid shrink-0 place-items-center overflow-hidden rounded-full bg-char shadow-glow-ember ring-2 ring-ember"
         style={{ width: size, height: size }}
       >
-        <Flame size={size * 0.5} />
+        <img
+          src={asset('assets/champs-emblem.png')}
+          alt="Champs Chicken"
+          className="h-full w-full scale-[1.16] object-cover"
+        />
       </span>
       {showWordmark && (
         <span

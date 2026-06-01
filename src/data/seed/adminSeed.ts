@@ -50,7 +50,7 @@ const NAMES = [
   'Malik J.', 'Grace E.', 'Hassan Q.', 'Ruby C.', 'Trey L.', 'Ivy M.',
 ]
 
-const HEAT_KEYS: HeatKey[] = ['none', 'mild', 'hot', 'blaze', 'reaper']
+const HEAT_KEYS: HeatKey[] = ['mild', 'hot', 'blaze', 'reaper']
 
 function randomPhone(): string {
   return `(260) 555-0${rand(100, 199)}`

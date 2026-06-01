@@ -15,7 +15,6 @@ import { HeatMeter } from '@/components/brand/HeatMeter'
 import { Marquee } from '@/components/ui/Marquee'
 import { Reveal } from '@/components/ui/Reveal'
 import { MenuItemCard } from '@/components/site/MenuItemCard'
-import { HyperlapseVideo } from '@/components/site/HyperlapseVideo'
 import { LemonadeShowcase } from '@/components/site/LemonadeShowcase'
 import { ExperienceSection } from '@/components/site/ExperienceSection'
 import { SnackAttack } from '@/components/site/SnackAttack'
@@ -462,10 +461,14 @@ function FindUsStrip() {
       </Reveal>
 
       <div className="mt-9 grid gap-6 lg:grid-cols-[minmax(0,380px)_1fr]">
-        {/* live hyperlapse of the storefront */}
+        {/* storefront feature shot */}
         <Reveal className="overflow-hidden rounded-3xl border border-bone/10 shadow-plate">
           <div className="relative aspect-[3/4]">
-            <HyperlapseVideo />
+            <img
+              src={asset('assets/photos/cheese-drip.jpg')}
+              alt="Champs Nashville hot chicken, dipped to order"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-char via-char/20 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-5">
               <p className="font-heading text-[10px] font-extrabold uppercase tracking-ember text-flare">

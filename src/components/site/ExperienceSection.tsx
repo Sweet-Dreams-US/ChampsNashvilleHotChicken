@@ -4,11 +4,11 @@ import { Flame } from '@/components/brand/Flame'
 import { asset } from '@/lib/asset'
 
 const SHOTS = [
-  { src: 'happy-customer.jpg', alt: 'A happy Champs customer at the storefront', rotate: -3 },
-  { src: 'dipping.jpg', alt: 'Dipping hot chicken tenders in cheese sauce', rotate: 2.5 },
-  { src: 'cheese-drip.jpg', alt: 'A cheese-dipped Champs tender', rotate: -2 },
-  { src: 'kitchen.jpg', alt: 'Inside the Champs kitchen', rotate: 3 },
-  { src: 'storefront-customer.jpg', alt: 'Picking up a Champs order', rotate: -2.5 },
+  { src: 'assets/photos/dunk-hero.jpg', alt: 'Champs hot tenders dunked in sauce over flames', rotate: -3 },
+  { src: 'assets/menu/slider-meal.jpg', alt: 'A Champs chicken sandwich with fries', rotate: 2.5 },
+  { src: 'assets/photos/cheese-drip.jpg', alt: 'A cheese-dipped Champs tender', rotate: -2 },
+  { src: 'assets/menu/two-tender-meal.jpg', alt: 'Champs jumbo chicken tenders', rotate: 3 },
+  { src: 'assets/menu/over-fries-mac.jpg', alt: 'The Champs Snack Attack loaded bowl', rotate: -2.5 },
 ]
 
 /** The "This is Champs" brand moment — real photos of real people + real heat. */
@@ -51,7 +51,7 @@ export function ExperienceSection() {
               }
             >
               <img
-                src={asset(`assets/photos/${shot.src}`)}
+                src={asset(shot.src)}
                 alt={shot.alt}
                 loading="lazy"
                 className="aspect-[3/4] h-full w-full object-cover"
