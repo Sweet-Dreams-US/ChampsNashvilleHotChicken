@@ -103,7 +103,7 @@ export function Analytics() {
           delta={formatDelta(pct(conversion, prevConversion))}
           deltaUp={conversion >= prevConversion}
           icon={Users}
-          accent="#FF2E88"
+          accent="#B11E3A"
         />
       </div>
 

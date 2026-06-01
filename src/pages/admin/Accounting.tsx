@@ -12,7 +12,7 @@ const CATEGORY_COLOR: Record<string, string> = {
   Labor: '#E4231B',
   Rent: '#FFC230',
   Utilities: '#74B49A',
-  Marketing: '#FF2E88',
+  Marketing: '#B11E3A',
   Equipment: '#A2938A',
 }
 

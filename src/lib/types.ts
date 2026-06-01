@@ -36,7 +36,7 @@ export interface OrderLine {
 }
 
 export interface Order {
-  /** Human-facing ticket number, e.g. "HC-1042". */
+  /** Human-facing ticket number, e.g. "CH-1042". */
   id: string
   placedAt: string // ISO timestamp
   status: OrderStatus

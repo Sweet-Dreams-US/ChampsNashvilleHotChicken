@@ -27,7 +27,7 @@ export function nextOrderId(): string {
     .map((o) => Number.parseInt(o.id.replace(/\D/g, ''), 10))
     .filter((n) => Number.isFinite(n))
   const max = nums.length ? Math.max(...nums) : 0
-  return `HC-${Math.max(max, 2000) + 1}`
+  return `CH-${Math.max(max, 2000) + 1}`
 }
 
 /** Prepend a freshly placed order. */

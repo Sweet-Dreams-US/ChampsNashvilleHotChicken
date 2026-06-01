@@ -124,7 +124,7 @@ function buildOrders(): Order[] {
       placed.setHours(rand(11, 21), rand(0, 59), 0, 0)
       if (placed.getTime() > now.getTime()) continue
       counter += 1
-      orders.push(makeOrder(`HC-${counter}`, placed, d))
+      orders.push(makeOrder(`CH-${counter}`, placed, d))
     }
   }
   return orders.sort(
@@ -192,7 +192,7 @@ const EXPENSES: ExpenseItem[] = [
   { id: 'x5', category: 'Food & Supplies', vendor: 'Sysco', amount: 642.4, date: dateFromNow(-23) },
   { id: 'x6', category: 'Labor', vendor: 'Payroll — Period 1', amount: 2460.0, date: dateFromNow(-1) },
   { id: 'x7', category: 'Labor', vendor: 'Payroll — Period 2', amount: 2420.0, date: dateFromNow(-15) },
-  { id: 'x8', category: 'Rent', vendor: 'Pontiac St. Property LLC', amount: 2450.0, date: dateFromNow(-7) },
+  { id: 'x8', category: 'Rent', vendor: 'Georgetown Square Property LLC', amount: 2450.0, date: dateFromNow(-7) },
   { id: 'x9', category: 'Utilities', vendor: 'Indiana Michigan Power', amount: 486.3, date: dateFromNow(-6) },
   { id: 'x10', category: 'Utilities', vendor: 'Fort Wayne City Utilities', amount: 274.15, date: dateFromNow(-12) },
   { id: 'x11', category: 'Utilities', vendor: 'Comcast Business', amount: 139.99, date: dateFromNow(-11) },
@@ -212,9 +212,9 @@ const SOCIALS: SocialPlatform[] = [
 
 const POSTS: SocialPost[] = [
   { id: 'p1', platform: 'tiktok', caption: 'Reaper level… do you have what it takes? 🌶️🔥', date: dateFromNow(-1), likes: 14200, comments: 612, reach: 98000 },
-  { id: 'p2', platform: 'instagram', caption: 'Chicken over rice hits different. White sauce + hot sauce.', date: dateFromNow(-2), likes: 842, comments: 47, reach: 6100 },
+  { id: 'p2', platform: 'instagram', caption: 'The Snack Attack hits different — mac, two tenders, all the sauce.', date: dateFromNow(-2), likes: 842, comments: 47, reach: 6100 },
   { id: 'p3', platform: 'tiktok', caption: 'POV: the crust crunch ASMR you needed today', date: dateFromNow(-4), likes: 22800, comments: 905, reach: 167000 },
-  { id: 'p4', platform: 'instagram', caption: 'Loaded Platter. Mac, slaw, fries, all the heat. 🍗', date: dateFromNow(-5), likes: 1106, comments: 73, reach: 8400 },
+  { id: 'p4', platform: 'instagram', caption: 'Tenderloin sandwich, dialed to Nashville Hot. 🔥🍗', date: dateFromNow(-5), likes: 1106, comments: 73, reach: 8400 },
   { id: 'p5', platform: 'facebook', caption: 'Catering for the whole crew — book 2 hours ahead!', date: dateFromNow(-6), likes: 218, comments: 31, reach: 4900 },
   { id: 'p6', platform: 'instagram', caption: 'Free Slider Friday is BACK this week. Tag a friend 👀', date: dateFromNow(-8), likes: 1340, comments: 158, reach: 11200 },
 ]

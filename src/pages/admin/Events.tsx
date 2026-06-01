@@ -101,7 +101,7 @@ export function Events() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard label="Open Events" value={String(openCount)} icon={CalendarDays} accent="#FF6A14" />
         <StatCard label="Catering Requests" value={String(cateringCount)} icon={UtensilsCrossed} accent="#FFC230" />
-        <StatCard label="This Week" value={String(thisWeek)} icon={CalendarPlus} accent="#FF2E88" />
+        <StatCard label="This Week" value={String(thisWeek)} icon={CalendarPlus} accent="#B11E3A" />
         <StatCard label="Confirmed" value={String(confirmed)} icon={CalendarDays} accent="#74B49A" />
       </div>
 

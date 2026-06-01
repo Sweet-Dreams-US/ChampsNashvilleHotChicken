@@ -9,7 +9,7 @@ import { AreaChart } from '@/components/admin/charts/AreaChart'
 import { formatCompact, formatDelta, formatNumber, formatDate, round2 } from '@/lib/format'
 
 const PLATFORM: Record<SocialPlatformKey, { color: string; Icon: LucideIcon }> = {
-  instagram: { color: '#FF2E88', Icon: Instagram },
+  instagram: { color: '#B11E3A', Icon: Instagram },
   facebook: { color: '#4A8CFF', Icon: Facebook },
   tiktok: { color: '#25E0D8', Icon: Music2 },
 }
@@ -50,7 +50,7 @@ export function Socials() {
           label="30-Day Reach"
           value={formatCompact(totalReach)}
           icon={Heart}
-          accent="#FF2E88"
+          accent="#B11E3A"
         />
         <StatCard
           label="Avg Engagement"
@@ -127,7 +127,7 @@ export function Socials() {
         <AdminCard title="Follower Growth" subtitle="Combined audience, last 30 days">
           <AreaChart
             data={followerTrend}
-            color="#FF2E88"
+            color="#B11E3A"
             format={(v) => `${formatNumber(Math.round(v))} followers`}
           />
         </AdminCard>

@@ -72,7 +72,7 @@ export function Staff() {
         <StatCard label="Total Staff" value={String(data.staff.length)} icon={Users} accent="#FF6A14" />
         <StatCard label="On Roster" value={String(active)} icon={UserCheck} accent="#74B49A" />
         <StatCard label="Avg Pay Rate" value={`${formatPrice(avgPay)}/hr`} icon={Wallet} accent="#FFC230" />
-        <StatCard label="Roles" value={String(roleCount)} icon={Users} accent="#FF2E88" />
+        <StatCard label="Roles" value={String(roleCount)} icon={Users} accent="#B11E3A" />
       </div>
 
       {/* add form */}

@@ -1,10 +1,10 @@
 /**
  * Resolve a path inside /public against Vite's base URL.
- * In production the site lives at /champs/, so `asset('assets/x.png')`
- * becomes `/champs/assets/x.png`.
+ * In production the site lives at /ChampsNashvilleHotChicken/, so `asset('assets/x.png')`
+ * becomes `/ChampsNashvilleHotChicken/assets/x.png`.
  */
 export function asset(path: string): string {
-  const base = import.meta.env.BASE_URL // "/champs/"
+  const base = import.meta.env.BASE_URL // "/ChampsNashvilleHotChicken/"
   return `${base}${path.replace(/^\/+/, '')}`
 }
 
